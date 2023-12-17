@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , NgZone} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hazmaAngular';
-}
+
+
+
+  constructor(private ngZone: NgZone) {
+    this.ngZone.runOutsideAngular(() => {
+      setInterval(() => {
+        
+        });
+
+       
+      }, 100);
+    }
+
+
+
+  }
+
+
+
