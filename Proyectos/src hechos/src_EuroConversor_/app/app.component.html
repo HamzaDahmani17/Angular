@@ -1,0 +1,18 @@
+<div class="d-flex align-items-center justify-content-center vh-100">
+  <div class="row d-flex justify-content-center">
+   <div class="col-auto">
+    <h3> {{title}}</h3>
+      <h6>DOLARES</h6><input [(ngModel)]="dolares" type="number" (keyup)="actualizarDolares()"(change)="actualizarDolares()" ><br>
+      <h6>LIBRAS</h6><input [(ngModel)]="libras" type="number" (keyup)="actualizarLibras()" (change)="actualizarLibras()"><br>
+      <h6>YENES</h6><input [(ngModel)]="yenes"  type="number" (keyup)="actualizarYenes()" (change)="actualizarYenes()"><br>
+      <h6>EUROS</h6><input [(ngModel)]="euros"  type="number" (keyup)="actualizarEuros()" (change)="actualizarEuros()"><br>
+      <button (click)="limpiar()">Limpiar</button><br>
+    
+  
+    </div>
+  </div>
+</div>
+
+<div class="d-flex align-items-center justify-content-center vh-100">
+  <!-- Contenido a centrar en la página completa --> 
+</div>
