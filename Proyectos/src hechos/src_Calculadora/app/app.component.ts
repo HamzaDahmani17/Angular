@@ -8,19 +8,19 @@ import { NgModule } from '@angular/core';
 export class AppComponent {
   res: number = 0;
   title = 'Calculadora Hamza';
-  num1: any;
-  num2: any;
+  num1: String="";
+  num2: String="";
   division() {
-    this.res = this.num1 / this.num2;
+    this.res = Number(this.num1) / Number(this.num2);
   }
   producto() {
-    this.res = this.num1 * this.num2;
+    this.res = Number(this.num1) * Number(this.num2);
   }
   restar() {
-    this.res = this.num1 - this.num2;
+    this.res = Number(this.num1) - Number(this.num2);
   }
   sumar() {
-    this.res = this.num1 + this.num2;
+    this.res = Number(this.num1) + Number(this.num2);
   }
 
 }
